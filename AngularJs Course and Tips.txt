@@ -1,1 +1,3 @@
 ---------------------------------- AngularJS ----------------------------------------------
+	
+	- Data Binding: relacionamento model e objeto
