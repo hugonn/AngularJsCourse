@@ -1,13 +1,28 @@
 ---------------------------------- AngularJS ----------------------------------------------
 	
 	- Data Binding: relacionamento model e objeto.
+    - Data Binding Dinâmico.
     - <html ng-app="NomeDaApp"> significa angular application, prepara o HTML para suportar o angular.
-    - Angular é baseado no MVC.
+    - Angular é baseado no MVC (Model - View - Controller).
     - Curly braces referenciam os elementos no HTML.
     - <ng-model> pode ser referenciada por {{}} (curly braces) no html.
     - <ng-controller> referencia uma controller que vai manipular uma div ou section.
-        - É preciso definir a controller e o angular dentro do <script> : angular.module('app',[])
+        - É preciso definir a controller e o angular dentro do <script> : var myApp = angular.module('NomeDaApp',[])
+        - myApp.Controller('NomeDaController', funçãoDaController)
         - Controllers possuem um scopo, então a controller recebe $scope
         - $ significa manipulação de elementos ( mesmo jeito que o Jquery)
         - Exemplo: var ctrlApp = function($scope){ $scope.nome = "exemploNome"}
         - Variáveis do $scope são referenciadas por {{}} (curly braces)
+    - Listeners no Angular = $scope.$watch('nomeDaVariavelASerCuidada', funcaoExecutada)
+    -  podemos utilizar o ng-show e o ng-hide para esconder ou exibir algum conteúdo ou uma model. Basta referenciar a model dentro de um <ng-hide = "nomeDaModel">
+    
+    - Array no angular: $scope.nomeDoArray = [{dado1 : valor1}, {dado2: valor2}];
+    - ng-repeat : Foreach do angular
+        - <li ng-repeat="variavel in variaveis"> {{variavel.dado1}} </li>
+    - Filtro em Angular: <li ng-repeat="variavel in variaveis | filter:nomeDaModelInputText">
+    - <ng-click> evento de clique no botão em Angular
+    -Root Model: Model instanciado fora de controllers
+    - parâmetro $index: passa o número do item em uma arrayList
+    - ng-change: verifica quando o objeto for alterado
+    - ng-options: Listagem
+    - ng-options = "objeto1.variavel for objeto1 in objetos" 
