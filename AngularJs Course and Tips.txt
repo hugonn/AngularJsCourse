@@ -1,3 +1,13 @@
 ---------------------------------- AngularJS ----------------------------------------------
 	
-	- Data Binding: relacionamento model e objeto
+	- Data Binding: relacionamento model e objeto.
+    - <html ng-app="NomeDaApp"> significa angular application, prepara o HTML para suportar o angular.
+    - Angular é baseado no MVC.
+    - Curly braces referenciam os elementos no HTML.
+    - <ng-model> pode ser referenciada por {{}} (curly braces) no html.
+    - <ng-controller> referencia uma controller que vai manipular uma div ou section.
+        - É preciso definir a controller e o angular dentro do <script> : angular.module('app',[])
+        - Controllers possuem um scopo, então a controller recebe $scope
+        - $ significa manipulação de elementos ( mesmo jeito que o Jquery)
+        - Exemplo: var ctrlApp = function($scope){ $scope.nome = "exemploNome"}
+        - Variáveis do $scope são referenciadas por {{}} (curly braces)
