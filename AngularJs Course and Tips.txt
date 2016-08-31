@@ -26,3 +26,6 @@
     - ng-change: verifica quando o objeto for alterado
     - ng-options: Listagem
     - ng-options = "objeto1.variavel for objeto1 in objetos" 
+    - Angular é uma variavel global do AngularJS
+    - Criação de módulos para organização
+    - carregar modulos através do angular.module('nomeDoModulo',[]).controller('Nomecontroller', function($scope){})
