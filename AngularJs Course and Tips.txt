@@ -19,13 +19,27 @@
     - Array no angular: $scope.nomeDoArray = [{dado1 : valor1}, {dado2: valor2}];
     - ng-repeat : Foreach do angular
         - <li ng-repeat="variavel in variaveis"> {{variavel.dado1}} </li>
-    - Filtro em Angular: <li ng-repeat="variavel in variaveis | filter:nomeDaModelInputText">
+   
+   - Filtro em Angular: <li ng-repeat="variavel in variaveis | filter:nomeDaModelInputText">
     - <ng-click> evento de clique no botão em Angular
-    -Root Model: Model instanciado fora de controllers
+    
+    - Root Model: Model instanciado fora de controllers
     - parâmetro $index: passa o número do item em uma arrayList
     - ng-change: verifica quando o objeto for alterado
+    
     - ng-options: Listagem
     - ng-options = "objeto1.variavel for objeto1 in objetos" 
-    - Angular é uma variavel global do AngularJS
+    
+    - "angular" é uma variavel global do AngularJS
     - Criação de módulos para organização
-    - carregar modulos através do angular.module('nomeDoModulo',[]).controller('Nomecontroller', function($scope){})
+    - Declarar o módulo na tag ng-app = "meuModulo"
+    - carregar modulos e definir a controller através do angular.module('nomeDoModulo',[]).controller('Nomecontroller', function($scope){})
+    
+    - Dependency Injection : variaveis passadas por parametro dependem de algo ou de outras variáveis.
+        - $scope é um exemplo. 
+        - nomeDaController.$inject = ['$scope']; // Array
+        - minificação
+        
+    - Rotas : URLs acessadas dentro da aplicação
+    - angular.config($routeProvider) configuração do angular
+    
