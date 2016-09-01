@@ -42,4 +42,17 @@
         
     - Rotas : URLs acessadas dentro da aplicação
     - angular.config($routeProvider) configuração do angular
+    - $routeProvider é o provedor de rotas
+    - Scripts no final para não bloquear a página na hora do carregamento
+    - views são carregadass através das rotas do angular
+    - ng-view é utilizado como diretiva para abrir a template configurada no $routeProvider
+    - é necessário importar
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/X.X.X/angular.min.js"></script>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/X.X.X/angular-route.min.js"></script>
+        
+    - é necessário importar o ng-route 
+        angular.module('meuModulo',['ngRoute']);
+    -$scope.add: abrir uma function e utilizar o .push para adicionar coisas em um array
+    -$routeParams: passar paramametros para outras views ( edit View)
     
